@@ -6,7 +6,5 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins:[
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
   ]
 }
