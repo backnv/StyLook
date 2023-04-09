@@ -1,0 +1,36 @@
+.masonry {}
+.masonry__wrap {
+    columns: 6;
+    column-gap: 16px;
+}
+.masonry .grid {
+    margin-bottom: 16px;
+    position: relative;
+}
+@media (max-width: 1500px) {
+    .masonry__wrap{
+        columns: 5;
+    }
+}
+
+@media (max-width: 1200px) {
+    .masonry__wrap{
+        columns: 3;
+    }
+}
+@media (max-width: 992px) {
+    .masonry__wrap{
+        columns: 2;
+        column-gap: 5px;}
+    .masonry .grid {
+        margin-bottom: 5px;
+
+    }
+}
+
+
+
+
+@media (max-width: 1223px) {
+
+}

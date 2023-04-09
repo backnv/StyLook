@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="generator" content="Gatsby 5.8.1"/>
+    <style data-href="/styles.7013336cf387db2e7a44.css"
+           data-identity="gatsby-global-css">@import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700&display=swap);
+
+    .header {
+        animation: gradient 15s ease infinite;
+        background: var(--gradient);
+        background: linear-gradient(-45deg, #ebdedf, #cea7af, #a9adcc, #d9a995);
+        background-size: 400% 400%;
+        color: #fff;
+        height: 110vh;
+        max-height: 1000px;
+        overflow: hidden;
+        position: relative
+    }
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10
+    }
+
+    .header__wrap-text {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        margin-top: clamp(20px, 40vw, 200px);
+        max-width: 900px;
+        max-width: clamp(300px, 50vw, 900px);
+        padding: 20px
+    }
+
+    .header__buttons {
+        display: flex;
+        gap: 20px;
+        height: 100px;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        width: 100%
+    }
+
+    .header__button-read {
+        align-self: start;
+        background: transparent;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        height: 50px;
+        margin-left: 20px;
+        overflow: hidden;
+        position: relative;
+        width: 300px
+    }
+
+    .header__button-read span {
+        opacity: 1;
+        position: relative;
+        top: 0;
+        transition: .2s ease-in
+    }
+
+    .header__button-read i {
+        border: 2px solid #fff;
+        box-sizing: border-box;
+        font-size: 25px;
+        height: 100%;
+        left: 0;
+        line-height: 53px;
+        position: absolute;
+        top: 48px;
+        transition: .25s ease-in-out;
+        width: 100%
+    }
+
+    .header__button-read:hover > span {
+        opacity: 0;
+        top: -50px
+    }
+
+    .header__button-read:hover > i {
+        top: 0
+    }
+
+    .header__text, .header__title {
+        font-size: clamp(30px, 4vw, 100px);
+        font-weight: 700;
+        line-height: clamp(20px, 3vw, 100px);
+        text-shadow: 0 0 2px var(--background)
+    }
+
+    .header__text {
+        font-size: clamp(20px, 2vw, 50px);
+        font-weight: 300;
+        line-height: clamp(20px, 2vw, 50px);
+        text-shadow: 0 0 1px var(--background)
+    }
+
+    .header .wave-bottom {
+        bottom: -5px;
+        position: absolute;
+        width: 100%;
+        z-index: 10
+    }
+
+    .header__span-logo {
+        color: var(--background);
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        left: -38px;
+        position: absolute;
+        text-shadow: 0 0 2px var(--background);
+        text-transform: uppercase;
+        top: 180px;
+        transform: rotate(90deg);
+        width: 100px;
+        z-index: 11
+    }
+
+    .header__span-bottom:after, .header__span-bottom:before, .header__span-top:after, .header__span-top:before {
+        animation: gradient 15s ease infinite;
+        background: linear-gradient(to bottom right, #fe7531, #b508cd);
+        background-size: 100% 100%;
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 11
+    }
+
+    .header__span-top:before {
+        height: 5px;
+        left: 10px;
+        top: 10px;
+        width: 95%;
+        z-index: 10
+    }
+
+    .header__span-top:after {
+        height: 110px;
+        left: 10px;
+        top: 10px;
+        width: 5px
+    }
+
+    .header__span-bottom:before {
+        bottom: 90px;
+        height: 5px;
+        left: 10px;
+        width: 95%
+    }
+
+    .header__span-bottom:after {
+        background: linear-gradient(to bottom right, #b508cd, #fe7531);
+        bottom: 90px;
+        left: 10px;
+        top: 250px;
+        width: 5px
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        to {
+            background-position: 0 50%
+        }
+    }
+
+    .header__image {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1
+    }
+
+    .header__image img {
+        height: clamp(100%, 70vw, 140%);
+        position: absolute;
+        right: clamp(-10%, 70vw, 0%);
+        top: 0;
+        transform: translate(0);
+        transition: 2s ease
+    }
+
+    .scroll-down2 {
+        border: 2px solid var(--background);
+        border-radius: 50px;
+        cursor: pointer;
+        height: 50px;
+        left: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        position: absolute;
+        transform: translate(-50%);
+        width: 30px
+    }
+
+    .scroll-down2:before {
+        animation: scrollDown2 1.5s ease infinite;
+        border-radius: 100%;
+        height: 6px;
+        top: 20px
+    }
+
+    .scroll-down2:after, .scroll-down2:before {
+        background: var(--background);
+        content: "";
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 6px
+    }
+
+    .scroll-down2:after {
+        border-radius: 3px;
+        height: 15px;
+        top: 5px
+    }
+
+    @keyframes scrollDown2 {
+        0% {
+            opacity: 0;
+            transform: translate(-50%)
+        }
+        50% {
+            opacity: 1;
+            transform: translate(-50%, 8px)
+        }
+        to {
+            opacity: 0;
+            transform: translate(-50%, 16px)
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header__button-read {
+            width: 100%
+        }
+
+        .scroll-down2 {
+            left: 0;
+            position: relative;
+            transform: translate(0)
+        }
+
+        .header__wrap-text {
+            justify-content: end;
+            max-width: 100%
+        }
+
+        .header__image img {
+            bottom: 0;
+            left: 50%;
+            top: auto;
+            transform: translate(-45%)
+        }
+    }
+
+    :root {
+        --fontcolortitle: #fff;
+        --fontcolortext: #a3a5a8;
+        --fontcolorsubtext: #fff;
+        --background2: #192029;
+        --fontcolortitle: #2d2f3a;
+        --fontcolortext: #2d2f3a;
+        --fontcolorsubtext: #ccd4d7;
+        --fontSizeTitle: 25px;
+        --fontSizeTexttitle: 22px;
+        --background: #fff;
+        --background2: #f6f6f6 !important;
+        --select: #428ad1;
+        --select2: #2f333a;
+        --font-color: #717171;
+        --font-color-link: #ff1054;
+        --gradient: linear-gradient(to bottom right, #fe7531, #b508cd)
+    }
+
+    .wave-bottom {
+        bottom: -5px;
+        position: absolute;
+        width: 100%;
+        z-index: 1
+    }
+
+    .wave-bottom svg path:first-child {
+        opacity: .15
+    }
+
+    .wave-bottom svg path:nth-child(2) {
+        opacity: .3
+    }
+
+    .wave-top {
+        position: absolute;
+        top: -5px;
+        transform: rotate(180deg);
+        width: 100%;
+        z-index: 1
+    }
+
+    .wave-bottom svg, .wave-top svg {
+        max-height: 150px;
+        width: 100%
+    }
+
+    .wave-top svg path:first-child {
+        opacity: .15
+    }
+
+    .wave-top svg path:nth-child(2) {
+        opacity: .3
+    }
+
+    .text-center {
+        text-align: center
+    }
+
+    .align-center {
+        margin: 0 auto
+    }
+
+    .hr {
+        height: 2px;
+        margin-bottom: 20px;
+        width: 100px
+    }
+
+    .button-one, .hr {
+        background: var(--gradient)
+    }
+
+    .button-one {
+        border: 0;
+        border-radius: 5px;
+        color: var(--font-color);
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        overflow: hidden;
+        padding: 13px 50px;
+        position: relative;
+        text-decoration: none;
+        z-index: 2
+    }
+
+    .button-one .icon {
+        font-size: 25px;
+        left: 0;
+        margin: 0 auto;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        transition: .5s ease
+    }
+
+    .button-one span {
+        background: transparent;
+        color: var(--font-color);
+        font-weight: 400;
+        position: relative;
+        text-transform: uppercase;
+        top: 0;
+        transition: .5s ease;
+        white-space: nowrap;
+        z-index: 2
+    }
+
+    .button-one:before {
+        background: var(--background);
+        border-radius: 3px;
+        bottom: 2px;
+        content: "";
+        display: block;
+        left: 2px;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        transition: .5s ease;
+        z-index: 1
+    }
+
+    .button-one:hover > .icon {
+        margin: auto;
+        opacity: 1;
+        top: 9px
+    }
+
+    .button-one:hover > span {
+        color: var(--background);
+        opacity: 0;
+        top: -30px
+    }
+
+    .button-one:hover span, .button-one:hover:before {
+        background: transparent
+    }
+
+    .gradient {
+        -webkit-text-fill-color: transparent;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: var(--fontcolortitle);
+        color: transparent
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: var(--background);
+        color: var(--font-color);
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-size: 18px;
+        line-height: 1;
+        margin: 0
+    }
+
+    code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+    }
+
+    a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+        border: 0;
+        font-family: Roboto Flex;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline
+    }
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block
+    }
+
+    ol, ul {
+        list-style: none
+    }
+
+    blockquote, q {
+        quotes: none
+    }
+
+    blockquote:after, blockquote:before, q:after, q:before {
+        content: "";
+        content: none
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    [class*=__container] {
+        margin: 0 auto;
+        max-width: 2000px;
+        padding: 0 10px
+    }
+
+    @media (max-width: 768px) {
+        [class*=__container] {
+            padding: 0 20px
+        }
+    }
+
+    a, li, p {
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: .5px;
+        line-height: 20px;
+        padding-bottom: 5px
+    }
+
+    ul.list li {
+        padding-left: 15px;
+        position: relative
+    }
+
+    ul.list li:before {
+        background: var(--gradient);
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 10px;
+        width: 10px
+    }
+
+    a {
+        color: var(--font-color-link);
+        font-weight: 400;
+        text-decoration: none
+    }
+
+    p span {
+        color: #444;
+        font-weight: 600
+    }
+
+    h1 {
+        font-size: 26px;
+        font-weight: 700
+    }
+
+    h1, h2 {
+        letter-spacing: 2px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        text-transform: uppercase
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: 600
+    }
+
+    h2 span {
+        color: var(--font-color-link)
+    }
+
+    h3 {
+        font-size: 17px;
+        font-weight: 500
+    }
+
+    h3, h4 {
+        line-height: 25px;
+        text-transform: uppercase
+    }
+
+    h4 {
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 5px
+    }
+
+    h5 {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px
+    }
+
+    h5, h6 {
+        text-transform: uppercase
+    }
+
+    h6 {
+        font-size: 14px
+    }
+
+    input {
+        font-size: 20px
+    }
+
+    .wave-block.white {
+        background: var(--background);
+        color: var(--font-color)
+    }
+
+    .wave-block.silver {
+        background: var(--background2);
+        color: var(--font-color)
+    }
+
+    .wave-block {
+        background: linear-gradient(45deg, #fe802d 8%, #fe0840 50%, #ac0bd9 90%);
+        color: #fff;
+        overflow: hidden;
+        position: relative
+    }
+
+    .wave-block__container {
+        padding-bottom: 150px;
+        padding-top: 150px
+    }
+
+    @media (max-width: 768px) {
+        .wave-block__container {
+            padding-bottom: 120px;
+            padding-top: 120px
+        }
+    }
+
+    .changing {
+        display: flex;
+        gap: 20px
+    }
+
+    .changing__box {
+        display: flex;
+        flex-basis: 0;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center
+    }
+
+    .changing__images {
+        display: grid;
+        gap: 5px;
+        grid-template-columns:1fr 1fr
+    }
+
+    .changing__image {
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%
+    }
+
+    .changing__img {
+        transition: .5s ease;
+        width: 100%
+    }
+
+    .changing__img:hover {
+        transform: scale(1.2)
+    }
+
+    .changing__item {
+        align-items: center;
+        border-bottom: 1px solid var(--background2);
+        display: grid;
+        grid-template-columns:50px 1fr;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 100%
+    }
+
+    .changing__item-span {
+        color: var(--font-color);
+        font-size: 30px;
+        line-height: 58px;
+        position: relative;
+        z-index: 1
+    }
+
+    @media (max-width: 940px) {
+        .changing {
+            flex-direction: column
+        }
+    }
+
+    .masonry__wrap {
+        column-count: 6;
+        column-gap: 16px
+    }
+
+    .masonry .grid {
+        margin-bottom: 16px;
+        position: relative
+    }
+
+    @media (max-width: 1500px) {
+        .masonry__wrap {
+            column-count: 5
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .masonry__wrap {
+            column-count: 3
+        }
+    }
+
+    @media (max-width: 992px) {
+        .masonry__wrap {
+            column-count: 2;
+            column-gap: 5px
+        }
+
+        .masonry .grid {
+            margin-bottom: 5px
+        }
+    }
+
+    .touch-image__element {
+        border-radius: 5px;
+        display: block;
+        overflow: hidden;
+        position: relative
+    }
+
+    .touch-image__element:hover > .touch-image__element-image-a, .touch-image__element:hover > .touch-image__overlay {
+        opacity: 0
+    }
+
+    .touch-image__element:hover > .touch-image__clickme {
+        font-size: 10px;
+        opacity: .7
+    }
+
+    .touch-image__element-image-b {
+        width: 100%
+    }
+
+    .touch-image__element-image-a {
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: .3s;
+        width: 100%
+    }
+
+    .touch-image__overlay {
+        background: var(--select);
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        opacity: .3;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .1s
+    }
+
+    .touch-image__clickme {
+        bottom: 10px;
+        color: var(--fontcolorsubtext);
+        cursor: pointer;
+        font-size: 15px;
+        left: 10px;
+        opacity: 1;
+        position: absolute;
+        transition: .3s
+    }
+
+    .sliderba {
+        column-gap: 10px;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        justify-content: space-between;
+        row-gap: 30px
+    }
+
+    .sliderba__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 10px
+    }
+
+    .sliderba-image {
+        border-radius: 10px
+    }
+
+    @media (max-width: 1223px) {
+        .sliderba {
+            grid-template-columns:1fr 1fr
+        }
+    }
+
+    @media (max-width: 940px) {
+        .sliderba {
+            grid-template-columns:1fr
+        }
+    }
+
+    .footer {
+        background: #15151d;
+        padding: 100px 0
+    }
+
+    .footer__submit {
+        margin-left: auto;
+        max-width: 300px
+    }
+
+    .footer__grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns:3fr 5fr
+    }
+
+    .footer__social-list {
+        display: flex;
+        gap: 30px
+    }
+
+    .footer__social-list-item {
+        color: var(--font-color-link);
+        font-size: 40px
+    }
+
+    .footer__form-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns:1fr 1fr
+    }
+
+    .footer__form-input {
+        border-bottom: 1px solid var(--background2)
+    }
+
+    .footer__form-group {
+        margin-top: 10px;
+        padding: 15px 0 0;
+        position: relative
+    }
+
+    .footer__form-input {
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid var(--font-color);
+        color: var(--background2);
+        font-family: inherit;
+        font-size: 1.3rem;
+        outline: 0;
+        padding: 7px 0;
+        transition: border-color .2s;
+        width: 100%
+    }
+
+    .footer__form-input::placeholder {
+        color: transparent
+    }
+
+    .footer__form-input:placeholder-shown ~ .footer__form-label {
+        cursor: text;
+        font-size: 1.3rem;
+        top: 20px
+    }
+
+    .footer__form-label {
+        color: var(--font-color);
+        display: block;
+        font-size: 1rem;
+        position: absolute;
+        top: 0;
+        transition: .2s
+    }
+
+    .footer__form-input:focus {
+        border-image: linear-gradient(90deg, #fe7531, #b508cd);
+        border-image-slice: 1;
+        border-width: 3px;
+        font-weight: 700;
+        padding-bottom: 6px
+    }
+
+    .footer__form-input:focus ~ .footer__form-label {
+        -webkit-text-fill-color: transparent;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: #11998e;
+        color: var(--fontcolortitle);
+        color: transparent;
+        display: block;
+        font-size: 1rem;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        transition: .2s
+    }
+
+    .footer__form-input:invalid, .footer__form-input:required {
+        box-shadow: none
+    }
+
+    @media (max-width: 900px) {
+        .footer__grid {
+            grid-template-columns:1fr
+        }
+    }
+
+    @media (max-width: 650px) {
+        .footer__form-grid {
+            grid-template-columns:1fr
+        }
+    }
+
+    .constructor {
+        padding: 100px 0
+    }
+
+    .constructor__container {
+        display: flex;
+        position: relative
+    }
+
+    .constructor__grid {
+        flex: 0 0 50%
+    }
+
+    .constructor__images-block-fileload {
+        display: none
+    }
+
+    .constructor__images-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 300px
+    }
+
+    .constructor__image-main {
+        width: 100%
+    }
+
+    .constructor__images-main-pikcha1 {
+        display: inline-block;
+        text-align: center;
+        width: 30%
+    }
+
+    .constructor__images-main-photo-icon {
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        font-size: 140px;
+        padding: 100px 0;
+        text-align: center;
+        width: 100%
+    }
+
+    .constructor__images-main-photo-icon-small {
+        color: #000;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 40px;
+        overflow: hidden;
+        padding: 5px;
+        text-align: center;
+        width: auto
+    }
+
+    .constructor__images-main {
+        background: #eaeef0;
+        border: 3px solid #2e7ac6;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 100%
+    }
+
+    .constructor__image-all {
+        column-count: 3;
+        padding-top: 1.25rem
+    }
+
+    .constructor__image {
+        border: 2px solid #2e7ac6;
+        border-radius: 6px;
+        display: block;
+        margin-bottom: 1.25rem;
+        width: 100%
+    }
+
+    .constructor__form input, .constructor__form-message {
+        width: 100%
+    }
+
+    .constructor__form-items {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr)
+    }
+
+    .constructor__form-wrap {
+        position: relative
+    }
+
+    .constructor__elements {
+        column-gap: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        row-gap: 3px
+    }
+
+    .constructor__element-link {
+        background: var(--background2);
+        border-radius: 10px;
+        color: var(--font-color);
+        display: block;
+        font-size: 13px;
+        padding: 7px 15px;
+        text-transform: uppercase;
+        transition: .3s ease-in
+    }
+
+    .constructor__element-link.active, .constructor__element-link:hover {
+        background: var(--font-color-link);
+        color: var(--background)
+    }
+
+    .constructor__form-textarea {
+        color: var(--font-color)
+    }
+
+    @media (max-width: 700px) {
+        .constructor__container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px
+        }
+    }</style>
+    <title data-gatsby-head="true">Home Page</title></head>
+<body>
+<div id="___gatsby">
+    <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+        <header class="header"><span class="header__span-top"></span><span class="header__span-bottom"></span><span
+                class="header__span-logo">StyLook</span>
+            <div class="header__container">
+                <div class="header__wrap-text"><h2 class="header__title">Одно фото</h2>
+                    <h2 class="header__title">Разный стиль</h2>
+                    <p class="header__text"> Начните экспериментировать с вашим стилем уже сегодня и создавайте десятки
+                        различных образов для любых случаев!</p></div>
+                <div class="header__buttons">
+                    <button class="header__button-read"><span>Узнать подробнее</span><i>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                             height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title>
+                            <path d="M12 6.306L7.796 2.102 0 9.898l12 12 12-12-7.796-7.796zm0 12L3.592 9.898l4.204-4.204L12 9.898l4.184-4.184 4.204 4.204"></path>
+                        </svg>
+                    </i></button>
+                    <div class="single-scroll-down-animation animation2">
+                        <div class="scroll-down2"></div>
+                    </div>
+                </div>
+                <div class="header__image"><img src="./static/2-10b4610165e7026f373ec4925b9fa17c.png" style="opacity:1"
+                                                alt=""/><img src="./static/1-d88507df1c707ddf702a130030d9651b.png"
+                                                             style="opacity:0" alt=""/><img
+                        src="./static/3-43dae63babaa14a11e685a48adf8369a.png" style="opacity:0" alt=""/></div>
+            </div>
+            <div class="wave-bottom">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
+                     preserveAspectRatio="none">
+                    <path d="M 0 14 s 88.64 3.48 300 36 c 260 40 514 27 703 -10 l 12 28 l 3 36 h -1018 z"></path>
+                    <path d="M 0 45 s 271 45.13 500 32 c 157 -9 330 -47 515 -63 v 86 h -1015 z"></path>
+                    <path d="M 0 58 s 188.29 32 508 32 c 290 0 494 -35 494 -35 v 45 h -1002 z"></path>
+                </svg>
+            </div>
+        </header>
+        <section class="wave-block silver">
+            <div class="wave-top">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+            <div class="wave-block__container" style="max-width:1400px"><h2> Хотите полностью изменить свой облик и
+                стать новым человеком? Тогда вам нужна услуга по изменению внешности! <span
+                        class="gradient">StyLook</span> предоставляет вам такую возмодность и поможет вам создать
+                идеальный образ.</h2></div>
+            <div class="wave-bottom">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="wave-block white">
+            <div class="wave-top">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+            <div class="wave-block__container" style="max-width:1400px"><h4>Title min</h4>
+                <h2 class="gradient ">title title</h2>
+                <div class="changing">
+                    <div class="changing__box">
+                        <div class="changing__images">
+                            <div class="changing__image"><img class="changing__img"
+                                                              src="./static/4-cf07bebfd5603763d979e97cb2629e6f.jpg"
+                                                              alt=""/></div>
+                            <div class="changing__image"><img class="changing__img"
+                                                              src="./static/2-6d261ec8e9716d2b8969eca1ffbacea1.jpg"
+                                                              alt=""/></div>
+                            <div class="changing__image"><img class="changing__img"
+                                                              src="./static/5-8efaab433f62b0970c7a48b24432269a.jpg"
+                                                              alt=""/></div>
+                            <div class="changing__image"><img class="changing__img"
+                                                              src="./static/6-aacfcb9e75fa32e3eed29988a4da2a95.jpg"
+                                                              alt=""/></div>
+                        </div>
+                    </div>
+                    <div class="changing__box"><h2>Это легко чем кажется, поверьте</h2>
+                        <div class="hr"></div>
+                        <ul class="changing__list">
+                            <li class="changing__item"><span class="changing__item-span"><svg stroke="currentColor"
+                                                                                              fill="none"
+                                                                                              stroke-width="0"
+                                                                                              viewBox="0 0 15 15"
+                                                                                              height="1em" width="1em"
+                                                                                              xmlns="http://www.w3.org/2000/svg"><path
+                                    fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.949988 4.48455C0.949988 5.34059 1.64395 6.03455 2.49999 6.03455C3.35603 6.03455 4.04999 5.34059 4.04999 4.48455C4.04999 3.6285 3.35603 2.93455 2.49999 2.93455C1.64395 2.93455 0.949988 3.6285 0.949988 4.48455ZM2.49999 6.93455C1.14689 6.93455 0.0499878 5.83764 0.0499878 4.48455C0.0499878 3.13145 1.14689 2.03455 2.49999 2.03455C3.85309 2.03455 4.94999 3.13145 4.94999 4.48455C4.94999 4.80813 4.88726 5.11707 4.77329 5.39985L5.73655 6.04413C5.72943 6.06656 5.72269 6.08914 5.71635 6.11188L5.56288 6.66186L5.21005 6.89773L4.21554 6.23366C3.77357 6.6672 3.168 6.93455 2.49999 6.93455ZM0.949991 10.5C0.949991 9.64394 1.64395 8.94998 2.49999 8.94998C3.35603 8.94998 4.04999 9.64394 4.04999 10.5C4.04999 11.356 3.35603 12.05 2.49999 12.05C1.64395 12.05 0.949991 11.356 0.949991 10.5ZM2.49999 8.04998C1.14689 8.04998 0.0499908 9.14688 0.0499908 10.5C0.0499908 11.8531 1.14689 12.95 2.49999 12.95C3.85309 12.95 4.94999 11.8531 4.94999 10.5C4.94999 10.1803 4.88877 9.87497 4.77743 9.595L15 2.75737L14.0486 2.85737C12.7077 2.9983 11.4091 3.40895 10.231 4.06461L7.15646 5.77564C6.92307 5.90553 6.75134 6.12339 6.67955 6.38066L6.42653 7.28737L4.22437 8.75957C3.78166 8.32091 3.17246 8.04998 2.49999 8.04998ZM7.14435 9.2149L7.15646 9.22176L10.231 10.9328C11.4091 11.5884 12.7077 11.9991 14.0486 12.14L15 12.24L8.81072 8.1003L7.14435 9.2149Z"
+                                    fill="currentColor"></path></svg></span>
+                                <p>Вы мечтаете о изменении своей внешности, но не хотите обращаться к стилистам и
+                                    платить большие деньги? Тогда для вас есть прекрасное решение - изменение внешности
+                                    на фото. Теперь вы можете легко и быстро изменить свой образ в любой момент, не
+                                    прибегая к радикальным мерам. Мы сможем разнообразить Ваши локоны, добавить им
+                                    объема или просто подстричь их по моде.</p></li>
+                            <li class="changing__item"><span class="changing__item-span"><svg stroke="currentColor"
+                                                                                              fill="currentColor"
+                                                                                              stroke-width="0"
+                                                                                              viewBox="0 0 24 24"
+                                                                                              height="1em" width="1em"
+                                                                                              xmlns="http://www.w3.org/2000/svg"><path
+                                    fill="none" d="M0 0h24v24H0z"></path><path
+                                    d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6h-1.77c-.28 0-.5.22-.5.5 0 .12.05.23.13.33.41.47.64 1.06.64 1.67A2.5 2.5 0 0112 22zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5a.54.54 0 00-.14-.35c-.41-.46-.63-1.05-.63-1.65a2.5 2.5 0 012.5-2.5H16c2.21 0 4-1.79 4-4 0-3.86-3.59-7-8-7z"></path><circle
+                                    cx="6.5" cy="11.5" r="1.5"></circle><circle cx="9.5" cy="7.5" r="1.5"></circle><circle
+                                    cx="14.5" cy="7.5" r="1.5"></circle><circle cx="17.5" cy="11.5"
+                                                                                r="1.5"></circle></svg></span>
+                                <p>Если вы хотите изменить цвет ваших глаз или волос, то мы предлагаем услуги
+                                    окрашивания волос. С их помощью вы можете получить ровную стрелку на глазах, более
+                                    яркий цвет волос.</p></li>
+                            <li class="changing__item"><span class="changing__item-span"><svg stroke="currentColor"
+                                                                                              fill="currentColor"
+                                                                                              stroke-width="0"
+                                                                                              viewBox="0 0 24 24"
+                                                                                              height="1em" width="1em"
+                                                                                              xmlns="http://www.w3.org/2000/svg"><g
+                                    id="Image_On"><g><path
+                                    d="M18.435,3.06H5.565a2.5,2.5,0,0,0-2.5,2.5V18.44a2.507,2.507,0,0,0,2.5,2.5h12.87a2.507,2.507,0,0,0,2.5-2.5V5.56A2.5,2.5,0,0,0,18.435,3.06ZM4.065,5.56a1.5,1.5,0,0,1,1.5-1.5h12.87a1.5,1.5,0,0,1,1.5,1.5v8.66l-3.88-3.88a1.509,1.509,0,0,0-2.12,0l-4.56,4.57a.513.513,0,0,1-.71,0l-.56-.56a1.522,1.522,0,0,0-2.12,0l-1.92,1.92Zm15.87,12.88a1.5,1.5,0,0,1-1.5,1.5H5.565a1.5,1.5,0,0,1-1.5-1.5v-.75L6.7,15.06a.5.5,0,0,1,.35-.14.524.524,0,0,1,.36.14l.55.56a1.509,1.509,0,0,0,2.12,0l4.57-4.57a.5.5,0,0,1,.71,0l4.58,4.58Z"></path><path
+                                    d="M8.062,10.565a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,8.062,10.565Zm0-4a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,8.062,6.565Z"></path></g></g></svg></span>
+                                <p>Мы предлагаем профессиональные услуги по изменению внешности на фото. Наша команда
+                                    опытных специалистов использует самые современные технологии и программы для
+                                    создания превосходных результатов. Мы знаем, что каждый человек уникален и имеет
+                                    свои особенности, поэтому мы уделяем особое внимание каждому клиенту, чтобы
+                                    удовлетворить все его потребности и пожелания.</p><i></i>
+                                <p>Новый фон, новая одежда, новые впечатления - все это ждет вас! Обратитесь к нам и
+                                    дайте нам возможность показать вам, что мы умеем делать!&quot;</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="wave-block silver">
+            <div class="wave-top">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+            <div class="wave-block__container" style="max-width:1400px"><h2 class="gradient">Мы гарантируем полную
+                конфиденциальность и безопасность ваших фотографий и данных. Вы можете быть уверены, что ваша личность и
+                фото будут защищены и останутся конфиденциальными.</h2></div>
+            <div class="wave-bottom">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+        </section>
+        <div class="constructor">
+            <div class="constructor__container">
+                <div class="constructor__grid">
+                    <div class="constructor__images-block">
+                        <div class="constructor__images-main">
+                            <div class="constructor__images-main-pikcha"><input id="file"
+                                                                                class="constructor__images-block-fileload"
+                                                                                type="file"
+                                                                                accept="image/png, image/gif, image/jpeg"
+                                                                                name="my_file[]" multiple=""/><label
+                                    for="file" class="constructor__images-main-photo-icon">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M678.3 642.4c24.2-13 51.9-20.4 81.4-20.4h.1c3 0 4.4-3.6 2.2-5.6a371.67 371.67 0 0 0-103.7-65.8c-.4-.2-.8-.3-1.2-.5C719.2 505 759.6 431.7 759.6 349c0-137-110.8-248-247.5-248S264.7 212 264.7 349c0 82.7 40.4 156 102.6 201.1-.4.2-.8.3-1.2.5-44.7 18.9-84.8 46-119.3 80.6a373.42 373.42 0 0 0-80.4 119.5A373.6 373.6 0 0 0 137 888.8a8 8 0 0 0 8 8.2h59.9c4.3 0 7.9-3.5 8-7.8 2-77.2 32.9-149.5 87.6-204.3C357 628.2 432.2 597 512.2 597c56.7 0 111.1 15.7 158 45.1a8.1 8.1 0 0 0 8.1.3zM512.2 521c-45.8 0-88.9-17.9-121.4-50.4A171.2 171.2 0 0 1 340.5 349c0-45.9 17.9-89.1 50.3-121.6S466.3 177 512.2 177s88.9 17.9 121.4 50.4A171.2 171.2 0 0 1 683.9 349c0 45.9-17.9 89.1-50.3 121.6C601.1 503.1 558 521 512.2 521zM880 759h-84v-84c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v84h-84c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h84v84c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-84h84c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z"></path>
+                                </svg>
+                            </label></div>
+                        </div>
+                        <div class="constructor__image-all"></div>
+                        <div class="constructor__images-block-all"></div>
+                    </div>
+                </div>
+                <div class="constructor__grid">
+                    <ul class="constructor__elements"></ul>
+                    <br/>
+                    <form class="constructor__form" method="POST" encType="multipart/form-data">
+                        <div class="footer__form-group"><textarea name="textarea"
+                                                                  class="footer__form-input constructor__form-textarea"
+                                                                  id="constructor__form" rows="6"></textarea><label
+                                for="constructor__form" class="footer__form-label constructor__form-label">Напишите нам
+                            чтобы вы хотели изменить</label></div>
+                        <button class="button-one" type="submit"><span>отправить</span><span class="icon"><svg
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path
+                                d="M124.7 201.8c.1-11.8 0-23.5 0-35.3v-35.3c0-1.3.4-2 1.4-2.7 11.5-8 24.1-12.1 38.2-11.1 12.5.9 22.7 7 28.1 21.7 3.3 8.9 4.1 18.2 4.1 27.7 0 8.7-.7 17.3-3.4 25.6-5.7 17.8-18.7 24.7-35.7 23.9-11.7-.5-21.9-5-31.4-11.7-.9-.8-1.4-1.6-1.3-2.8zm154.9 14.6c4.6 1.8 9.3 2 14.1 1.5 11.6-1.2 21.9-5.7 31.3-12.5.9-.6 1.3-1.3 1.3-2.5-.1-3.9 0-7.9 0-11.8 0-4-.1-8 0-12 0-1.4-.4-2-1.8-2.2-7-.9-13.9-2.2-20.9-2.9-7-.6-14-.3-20.8 1.9-6.7 2.2-11.7 6.2-13.7 13.1-1.6 5.4-1.6 10.8.1 16.2 1.6 5.5 5.2 9.2 10.4 11.2zM576 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zm-207.5 23.9c.4 1.7.9 3.4 1.6 5.1 16.5 40.6 32.9 81.3 49.5 121.9 1.4 3.5 1.7 6.4.2 9.9-2.8 6.2-4.9 12.6-7.8 18.7-2.6 5.5-6.7 9.5-12.7 11.2-4.2 1.1-8.5 1.3-12.9.9-2.1-.2-4.2-.7-6.3-.8-2.8-.2-4.2 1.1-4.3 4-.1 2.8-.1 5.6 0 8.3.1 4.6 1.6 6.7 6.2 7.5 4.7.8 9.4 1.6 14.2 1.7 14.3.3 25.7-5.4 33.1-17.9 2.9-4.9 5.6-10.1 7.7-15.4 19.8-50.1 39.5-100.3 59.2-150.5.6-1.5 1.1-3 1.3-4.6.4-2.4-.7-3.6-3.1-3.7-5.6-.1-11.1 0-16.7 0-3.1 0-5.3 1.4-6.4 4.3-.4 1.1-.9 2.3-1.3 3.4l-29.1 83.7c-2.1 6.1-4.2 12.1-6.5 18.6-.4-.9-.6-1.4-.8-1.9-10.8-29.9-21.6-59.9-32.4-89.8-1.7-4.7-3.5-9.5-5.3-14.2-.9-2.5-2.7-4-5.4-4-6.4-.1-12.8-.2-19.2-.1-2.2 0-3.3 1.6-2.8 3.7zM242.4 206c1.7 11.7 7.6 20.8 18 26.6 9.9 5.5 20.7 6.2 31.7 4.6 12.7-1.9 23.9-7.3 33.8-15.5.4-.3.8-.6 1.4-1 .5 3.2.9 6.2 1.5 9.2.5 2.6 2.1 4.3 4.5 4.4 4.6.1 9.1.1 13.7 0 2.3-.1 3.8-1.6 4-3.9.1-.8.1-1.6.1-2.3v-88.8c0-3.6-.2-7.2-.7-10.8-1.6-10.8-6.2-19.7-15.9-25.4-5.6-3.3-11.8-5-18.2-5.9-3-.4-6-.7-9.1-1.1h-10c-.8.1-1.6.3-2.5.3-8.2.4-16.3 1.4-24.2 3.5-5.1 1.3-10 3.2-15 4.9-3 1-4.5 3.2-4.4 6.5.1 2.8-.1 5.6 0 8.3.1 4.1 1.8 5.2 5.7 4.1 6.5-1.7 13.1-3.5 19.7-4.8 10.3-1.9 20.7-2.7 31.1-1.2 5.4.8 10.5 2.4 14.1 7 3.1 4 4.2 8.8 4.4 13.7.3 6.9.2 13.9.3 20.8 0 .4-.1.7-.2 1.2-.4 0-.8 0-1.1-.1-8.8-2.1-17.7-3.6-26.8-4.1-9.5-.5-18.9.1-27.9 3.2-10.8 3.8-19.5 10.3-24.6 20.8-4.1 8.3-4.6 17-3.4 25.8zM98.7 106.9v175.3c0 .8 0 1.7.1 2.5.2 2.5 1.7 4.1 4.1 4.2 5.9.1 11.8.1 17.7 0 2.5 0 4-1.7 4.1-4.1.1-.8.1-1.7.1-2.5v-60.7c.9.7 1.4 1.2 1.9 1.6 15 12.5 32.2 16.6 51.1 12.9 17.1-3.4 28.9-13.9 36.7-29.2 5.8-11.6 8.3-24.1 8.7-37 .5-14.3-1-28.4-6.8-41.7-7.1-16.4-18.9-27.3-36.7-30.9-2.7-.6-5.5-.8-8.2-1.2h-7c-1.2.2-2.4.3-3.6.5-11.7 1.4-22.3 5.8-31.8 12.7-2 1.4-3.9 3-5.9 4.5-.1-.5-.3-.8-.4-1.2-.4-2.3-.7-4.6-1.1-6.9-.6-3.9-2.5-5.5-6.4-5.6h-9.7c-5.9-.1-6.9 1-6.9 6.8zM493.6 339c-2.7-.7-5.1 0-7.6 1-43.9 18.4-89.5 30.2-136.8 35.8-14.5 1.7-29.1 2.8-43.7 3.2-26.6.7-53.2-.8-79.6-4.3-17.8-2.4-35.5-5.7-53-9.9-37-8.9-72.7-21.7-106.7-38.8-8.8-4.4-17.4-9.3-26.1-14-3.8-2.1-6.2-1.5-8.2 2.1v1.7c1.2 1.6 2.2 3.4 3.7 4.8 36 32.2 76.6 56.5 122 72.9 21.9 7.9 44.4 13.7 67.3 17.5 14 2.3 28 3.8 42.2 4.5 3 .1 6 .2 9 .4.7 0 1.4.2 2.1.3h17.7c.7-.1 1.4-.3 2.1-.3 14.9-.4 29.8-1.8 44.6-4 21.4-3.2 42.4-8.1 62.9-14.7 29.6-9.6 57.7-22.4 83.4-40.1 2.8-1.9 5.7-3.8 8-6.2 4.3-4.4 2.3-10.4-3.3-11.9zm50.4-27.7c-.8-4.2-4-5.8-7.6-7-5.7-1.9-11.6-2.8-17.6-3.3-11-.9-22-.4-32.8 1.6-12 2.2-23.4 6.1-33.5 13.1-1.2.8-2.4 1.8-3.1 3-.6.9-.7 2.3-.5 3.4.3 1.3 1.7 1.6 3 1.5.6 0 1.2 0 1.8-.1l19.5-2.1c9.6-.9 19.2-1.5 28.8-.8 4.1.3 8.1 1.2 12 2.2 4.3 1.1 6.2 4.4 6.4 8.7.3 6.7-1.2 13.1-2.9 19.5-3.5 12.9-8.3 25.4-13.3 37.8-.3.8-.7 1.7-.8 2.5-.4 2.5 1 4 3.4 3.5 1.4-.3 3-1.1 4-2.1 3.7-3.6 7.5-7.2 10.6-11.2 10.7-13.8 17-29.6 20.7-46.6.7-3 1.2-6.1 1.7-9.1.2-4.7.2-9.6.2-14.5z"></path></svg></span>
+                        </button>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="wave-block">
+            <div class="wave-top">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+            <div class="wave-block__container" style="max-width:1400px">
+                <div class="sliderba">
+                    <div class="sliderba__left"><h2>Наш подход к созданию образов гораздо глубже.</h2>
+                        <div class="hr"></div>
+                        <p>С помощью нашего сервиса изменения внешности на фото вы можете получить новый облик в
+                            считанные минуты. Все, что вам нужно сделать, это загрузить фотографию, выбрать необходимые
+                            опции и наслаждаться результатом. Вы можете делать это в любое время и в любом месте - мы
+                            работаем онлайн и готовы к вашим заказам в любое время суток.</p></div>
+                    <div class="sliderba__right">
+                        <div class="sliderba-image"
+                             style="position:relative;overflow:hidden;width:fit-content;cursor:e-resize;user-select:none">
+                            <div class="before"
+                                 style="position:absolute;overflow:hidden;width:50%;height:100%;top:0;left:0;border-right:2px solid #eee">
+                                <img src="./static/00213-4034140133-871790418cfc3614499bfbb403de9ead.jpg" alt="before"
+                                     style="height:100%"/></div>
+                            <div class="after"><img src="./static/00232-356440021-4320c1b0acb69b2b979ee15ce3656347.jpg"
+                                                    alt="after" style="max-width:100%;display:block"/></div>
+                            <input type="range" min="0" max="100" name="slider"
+                                   style="appearance:none;background-color:transparent;width:100%;height:100%;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);cursor:inherit"
+                                   value="50"/>
+                            <div class="resize-button"
+                                 style="background-color:#fff;pointer-events:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;width:30px;height:30px;display:flex;justify-content:center;align-items:center">
+                                <svg fill="#333" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                     viewBox="0 0 24 24">
+                                    <path d="M24,12l-5.7-5.7V11c-3.7,0-9,0-12.6,0V6.3L0,12l5.8,5.7V13c3.6,0,8.9,0,12.5,0v4.7L24,12z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="wave-block silver">
+            <div class="wave-top">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+            <div class="wave-block__container" style="max-width:1400px">
+                <div class="masonry"><h4 class="text-center">Галерея</h4>
+                    <h2 class="gradient text-center">Загрузить примеры работ</h2>
+                    <div class="masonry__wrap"></div>
+                    <br/><br/>
+                    <button class="button-one" type="submit" style="margin:0 auto"><span>Load...</span><span
+                            class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                              aria-hidden="true" height="1em" width="1em"
+                                              xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"
+                                                                                       stroke-linejoin="round"
+                                                                                       d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></span>
+                    </button>
+                </div>
+            </div>
+            <div class="wave-bottom">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                     preserveAspectRatio="none">
+                    <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                    <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                    <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="wave-block silver">
+            <div class="wave-top">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
+                     preserveAspectRatio="none">
+                    <path d="M 0 14 s 88.64 3.48 300 36 c 260 40 514 27 703 -10 l 12 28 l 3 36 h -1018 z"></path>
+                    <path d="M 0 45 s 271 45.13 500 32 c 157 -9 330 -47 515 -63 v 86 h -1015 z"></path>
+                    <path d="M 0 58 s 188.29 32 508 32 c 290 0 494 -35 494 -35 v 45 h -1002 z"></path>
+                </svg>
+            </div>
+            <div class="wave-block__container" style="max-width:1400px">
+                <div>
+                    <div class="faq-row-wrapper styles_faq-row-wrapper__3vA1D"
+                         style="--faq-bg-color:transparent;--title-text-color:#FF1054;--row-title-color:#2f333a;--row-content-color:#717171;--arrow-color:#FF1054">
+                        <section class="faq-title styles_faq-row__2YF3c"><h2>FAQ (ЧТО НУЖНО ЗНАТЬ)</h2></section>
+                        <section class="faq-body styles_row-body__1NvUo" role="list">
+                            <section class="faq-row styles_faq-row__2YF3c" role="listitem">
+                                <div class="row-title closed styles_row-title__1YiiY styles_closed__39w54 styles_no-tabfocus__1HmyD"
+                                     role="button" aria-expanded="false" aria-controls="react-faq-rowcontent-1">
+                                    <div class="row-title-text styles_row-title-text__1MuhU" id="react-faq-rowtitle-1">
+                                        <h3>Сколько фото Я получу,</h3></div>
+                                    <span class="icon-wrapper styles_icon-wrapper__2cftw" aria-hidden="true"><div
+                                            class="arrow-image undefined" alt="Expand arrow"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                                            width="36px" height="36px"><path
+                                            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path
+                                            d="M0 0h24v24H0V0z" fill="none"/></svg></div></span></div>
+                                <div class="styles_row-content__QOGZd row-content styles_animate__3ecdr" role="region"
+                                     id="react-faq-rowcontent-1" aria-expanded="false" aria-hidden="true"
+                                     style="height:0">
+                                    <div class="styles_row-content-text__2sgAB row-content-text"><p> `Все зависит от
+                                        сложности запроса, и качества фотографий, в среднем 20-50 фотографий </p></div>
+                                </div>
+                            </section>
+                            <section class="faq-row styles_faq-row__2YF3c" role="listitem">
+                                <div class="row-title closed styles_row-title__1YiiY styles_closed__39w54 styles_no-tabfocus__1HmyD"
+                                     role="button" aria-expanded="false" aria-controls="react-faq-rowcontent-2">
+                                    <div class="row-title-text styles_row-title-text__1MuhU" id="react-faq-rowtitle-2">
+                                        <h3>Как быстро обрабатываются фото</h3></div>
+                                    <span class="icon-wrapper styles_icon-wrapper__2cftw" aria-hidden="true"><div
+                                            class="arrow-image undefined" alt="Expand arrow"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                                            width="36px" height="36px"><path
+                                            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path
+                                            d="M0 0h24v24H0V0z" fill="none"/></svg></div></span></div>
+                                <div class="styles_row-content__QOGZd row-content styles_animate__3ecdr" role="region"
+                                     id="react-faq-rowcontent-2" aria-expanded="false" aria-hidden="true"
+                                     style="height:0">
+                                    <div class="styles_row-content-text__2sgAB row-content-text"><p>Все зависит от
+                                        загруденности сервера, от 20минут до нескольки часов</p></div>
+                                </div>
+                            </section>
+                            <section class="faq-row styles_faq-row__2YF3c" role="listitem">
+                                <div class="row-title closed styles_row-title__1YiiY styles_closed__39w54 styles_no-tabfocus__1HmyD"
+                                     role="button" aria-expanded="false" aria-controls="react-faq-rowcontent-3">
+                                    <div class="row-title-text styles_row-title-text__1MuhU" id="react-faq-rowtitle-3">
+                                        <h3> Требования к фото </h3></div>
+                                    <span class="icon-wrapper styles_icon-wrapper__2cftw" aria-hidden="true"><div
+                                            class="arrow-image undefined" alt="Expand arrow"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                                            width="36px" height="36px"><path
+                                            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path
+                                            d="M0 0h24v24H0V0z" fill="none"/></svg></div></span></div>
+                                <div class="styles_row-content__QOGZd row-content styles_animate__3ecdr" role="region"
+                                     id="react-faq-rowcontent-3" aria-expanded="false" aria-hidden="true"
+                                     style="height:0">
+                                    <div class="styles_row-content-text__2sgAB row-content-text"><p>Вы можете загрухать
+                                        любые фотографии, но если вы хотите изменить прическу, то лучше бы это была фото
+                                        до пояса. В галереи вы можете увидеть подобные работы</p></div>
+                                </div>
+                            </section>
+                            <section class="faq-row styles_faq-row__2YF3c" role="listitem">
+                                <div class="row-title closed styles_row-title__1YiiY styles_closed__39w54 styles_no-tabfocus__1HmyD"
+                                     role="button" aria-expanded="false" aria-controls="react-faq-rowcontent-4">
+                                    <div class="row-title-text styles_row-title-text__1MuhU" id="react-faq-rowtitle-4">
+                                        <h3>&quot;18+&quot;</h3></div>
+                                    <span class="icon-wrapper styles_icon-wrapper__2cftw" aria-hidden="true"><div
+                                            class="arrow-image undefined" alt="Expand arrow"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                                            width="36px" height="36px"><path
+                                            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path
+                                            d="M0 0h24v24H0V0z" fill="none"/></svg></div></span></div>
+                                <div class="styles_row-content__QOGZd row-content styles_animate__3ecdr" role="region"
+                                     id="react-faq-rowcontent-4" aria-expanded="false" aria-hidden="true"
+                                     style="height:0">
+                                    <div class="styles_row-content-text__2sgAB row-content-text"><p>Мы не создаем
+                                        фотографии интимного характера, но подчеркнуть денственность всегда готовы</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="faq-row styles_faq-row__2YF3c" role="listitem">
+                                <div class="row-title closed styles_row-title__1YiiY styles_closed__39w54 styles_no-tabfocus__1HmyD"
+                                     role="button" aria-expanded="false" aria-controls="react-faq-rowcontent-5">
+                                    <div class="row-title-text styles_row-title-text__1MuhU" id="react-faq-rowtitle-5">
+                                        <h3></h3></div>
+                                    <span class="icon-wrapper styles_icon-wrapper__2cftw" aria-hidden="true"><div
+                                            class="arrow-image undefined" alt="Expand arrow"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                                            width="36px" height="36px"><path
+                                            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path
+                                            d="M0 0h24v24H0V0z" fill="none"/></svg></div></span></div>
+                                <div class="styles_row-content__QOGZd row-content styles_animate__3ecdr" role="region"
+                                     id="react-faq-rowcontent-5" aria-expanded="false" aria-hidden="true"
+                                     style="height:0">
+                                    <div class="styles_row-content-text__2sgAB row-content-text"><p></p></div>
+                                </div>
+                            </section>
+                            <section class="faq-row styles_faq-row__2YF3c" role="listitem">
+                                <div class="row-title closed styles_row-title__1YiiY styles_closed__39w54 styles_no-tabfocus__1HmyD"
+                                     role="button" aria-expanded="false" aria-controls="react-faq-rowcontent-6">
+                                    <div class="row-title-text styles_row-title-text__1MuhU" id="react-faq-rowtitle-6">
+                                        What is the package version
+                                    </div>
+                                    <span class="icon-wrapper styles_icon-wrapper__2cftw" aria-hidden="true"><div
+                                            class="arrow-image undefined" alt="Expand arrow"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                                            width="36px" height="36px"><path
+                                            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path
+                                            d="M0 0h24v24H0V0z" fill="none"/></svg></div></span></div>
+                                <div class="styles_row-content__QOGZd row-content styles_animate__3ecdr" role="region"
+                                     id="react-faq-rowcontent-6" aria-expanded="false" aria-hidden="true"
+                                     style="height:0">
+                                    <div class="styles_row-content-text__2sgAB row-content-text"><p>current version is
+                                        1.2.1</p></div>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom">
+                <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
+                     preserveAspectRatio="none">
+                    <path d="M 0 14 s 88.64 3.48 300 36 c 260 40 514 27 703 -10 l 12 28 l 3 36 h -1018 z"></path>
+                    <path d="M 0 45 s 271 45.13 500 32 c 157 -9 330 -47 515 -63 v 86 h -1015 z"></path>
+                    <path d="M 0 58 s 188.29 32 508 32 c 290 0 494 -35 494 -35 v 45 h -1002 z"></path>
+                </svg>
+            </div>
+        </section>
+        <br/><br/><br/><br/>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__grid">
+                    <div class="footer__logo">
+                        <div style="font-size:30px;color:white;font-weight:bold">Logo</div>
+                        <br/><br/>
+                        <p>Есть ли у Вас интересные идеи для нас?.</p><br/>
+                        <p>Давайте Вместе сделаем наш сервис более продвинутым</p></div>
+                    <div class="footer__connection">
+                        <div class="footer__social">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-list-item">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                         viewBox="0 0 448 512" height="1em" width="1em"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+                                    </svg>
+                                </li>
+                                <li class="footer__social-list-item">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                         viewBox="0 0 448 512" height="1em" width="1em"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                    </svg>
+                                </li>
+                                <li class="footer__social-list-item">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                         viewBox="0 0 1024 1024" height="1em" width="1em"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 248c0-38 26-53 58-55l149 1c9 0 17 6 20 15 34 110 76 178 126 255 3 6 8 9 13 9 4 0 8-2 11-7l3-11 1-173c0-25-12-29-40-33-11-2-18-12-18-22 0-2 0-4 1-6 14-43 58-65 120-65l56-1c46 0 88 20 88 79v227c4 3 8 5 13 5 8 0 18-5 26-18 52-73 111-160 119-206 0-2 1-3 2-5 11-22 39-37 51-41 2-1 5-2 9-2h155l10 1c15 0 26 10 31 19 9 14 7 29 8 35v7c-15 91-119 193-163 259-6 8-9 15-9 22 0 6 3 12 8 18l146 184c8 11 12 24 12 35 0 33-31 52-61 55l-17 1H779c-3 0-5 1-8 1-17 0-31-9-41-19-32-39-63-79-94-118-6-8-8-9-14-13-7 29-13 59-20 89l-3 17c-5 18-18 37-42 42l-14 1h-98C272 830 117 584 8 277c-3-8-5-19-5-29zm601 259c-26 0-55-15-55-43V234c0-27-12-37-45-37l-57 2c-32 0-50 5-65 15 23 11 44 26 44 68v176c-3 35-32 58-60 58-19 0-36-11-46-29-45-68-83-132-116-224l-9-26-133-1c-18 0-16 1-16 10 0 6 1 14 2 19l21 56c109 282 246 467 376 467h100c14 0 13-17 16-27l19-88c4-9 7-17 14-24 8-8 17-11 26-11 19 0 37 15 49 29l85 108c7 11 13 13 17 13h165c16 0 30-5 30-15 0-3-1-7-3-10L818 582c-12-15-17-30-17-45 0-16 6-32 16-46 42-63 132-153 153-227l3-13c-1-5-1-9-2-14H814c-10 4-18 10-24 18l-6 19c-23 64-86 152-131 213-15 14-32 20-49 20z"></path>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="" class="footer__form">
+                            <div class="footer__form-grid">
+                                <div class="footer__form-group"><input type="input" class="footer__form-input"
+                                                                       placeholder="Name" name="name" id="name"
+                                                                       required=""/><label for="name"
+                                                                                           class="footer__form-label">Введите
+                                    Ваше имя</label></div>
+                                <div class="footer__form-group"><input type="input" class="footer__form-input"
+                                                                       placeholder="phone" name="phone" id="phone"
+                                                                       required=""/><label for="phone"
+                                                                                           class="footer__form-label">Введите
+                                    Ваш телефон</label></div>
+                            </div>
+                            <br/>
+                            <div class="footer__form-group"><textarea name="textarea" class="footer__form-input"
+                                                                      id="textarea" rows="6"></textarea><label
+                                    for="textarea" class="footer__form-label">Расскажите нам что нибудь о своих идеях
+                                =)</label></div>
+                            <br/>
+                            <button class="header__button-read footer__submit"><span>Отправить</span><i>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M22 20.007a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V19h18V7.3l-8 7.2-10-9V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v16.007zM4.434 5L12 11.81 19.566 5H4.434zM0 15h8v2H0v-2zm0-5h5v2H0v-2z"></path>
+                                    </g>
+                                </svg>
+                            </i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gatsby-announcer"
+         style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0"
+         aria-live="assertive" aria-atomic="true"></div>
+</div>
+<script id="gatsby-script-loader">/*<![CDATA[*/
+window.pagePath = "/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+<script
+        id="gatsby-chunk-mapping"
+>
+    window.___chunkMapping = "{\"app\":[\"/app-92f9f2842a90687b93ca.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-71647034791263aa3de2.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-00f6129303617a07c8e7.js\"]}";
+</script>
+<script>window.___webpackCompilationHash = "d2d4c5bd82ba68896951";</script>
+<script src="./webpack-runtime-0f98c26d442aff9d2ce4.js" async></script>
+<script src="./framework-5fddc9bdbc030566ab36.js" async></script>
+<script src="./app-92f9f2842a90687b93ca.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body>
+</html>

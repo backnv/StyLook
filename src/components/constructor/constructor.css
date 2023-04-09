@@ -1,0 +1,151 @@
+.constructor {
+    padding: 100px 0;
+}
+
+.constructor__container {
+    display: flex;
+    position: relative;
+}
+
+.constructor__grid {
+    flex: 0 0 50%;
+}
+
+.constructor__images-block-fileload {
+    display: none;
+}
+
+.constructor__images-block {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.constructor__image-main {
+    width: 100%;
+}
+
+.constructor__images-main-pikcha1 {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+.constructor__images-main-photo-icon {
+    font-size: 140px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 100px 0;
+    cursor: pointer;
+}
+
+.constructor__images-main-photo-icon-small {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    width: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.constructor__images-main {
+    border: 3px solid #2e7ac6;
+    width: 100%;
+    border-radius: 10px;
+    background: #eaeef0;
+    margin-bottom: 10px;
+}
+
+.constructor__image-all {
+    columns: 3;
+    padding-top: 1.25rem;
+}
+
+.constructor__image {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.25rem;
+
+    border-radius: 6px;
+
+    border: 2px solid #2e7ac6;
+
+
+}
+
+.constructor__form {
+
+}
+
+.constructor__form-message {
+    width: 100%;
+}
+
+.constructor__form input {
+    width: 100%;
+}
+
+.constructor__form-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.constructor__form-wrap {
+    position: relative;
+}
+
+.constructor__elements {
+    display: flex;
+    column-gap: 6px;
+    row-gap: 3px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.constructor__element {
+}
+
+.constructor__element-link {
+    transition: .3s ease-in;
+    display: block;
+    padding: 7px 15px;
+    background: var(--background2);
+    color: var(--font-color);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.constructor__element-link.active {
+    background: var(--font-color-link);
+    color: var(--background);
+}
+
+.constructor__element-link:hover {
+    background: var(--font-color-link);
+    color: var(--background)
+}
+
+.constructor__form-textarea {
+    color: var(--font-color);
+}
+
+
+
+
+@media (max-width: 700px) {
+    .constructor__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+
+

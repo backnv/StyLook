@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --fontcolortitle: white;
+    --fontcolortext: #a3a5a8;
+    --fontcolorsubtext: white;
+    --fontSizeTitle: 25px;
+    --fontSizeTexttitle: 22px;
+    /*--background: #070d14;*/
+    --background2: #192029;
+    --select2: #2f333a;
+
+
+    --fontcolortitle: #2d2f3a;
+    --fontcolortext: #2d2f3a;
+    --fontcolorsubtext: #ccd4d7;
+    --fontSizeTitle: 25px;
+    --fontSizeTexttitle: 22px;
+    --background: white;
+    --background2: #f6f6f6 !important;
+    --select: #428ad1;
+    --select2: #2f333a;
+
+    /*--background: #ffffff !important;*/
+    --font-color: #717171;
+    --font-color-link: #ff1054;
+
+    --gradient: linear-gradient(to bottom right,#fe7531,#b508cd);
+
+
+    /*1.6rem*/
+    /*h4 1.8rem*/
+}
+
+
+
+/*===== WAVE ========*/
+.wave-bottom{
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    z-index: 1;
+}
+.wave-bottom svg path:nth-child(1) {
+    opacity: .15;
+}
+
+.wave-bottom svg path:nth-child(2) {
+    opacity: .3;
+}
+
+.wave-top{
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+.wave-bottom svg, .wave-top svg{
+    width: 100%;
+    max-height: 150px;
+}
+
+.wave-top svg path:nth-child(1) {
+    opacity: .15;
+}
+
+.wave-top svg path:nth-child(2) {
+    opacity: .3;
+}
+
+/*===== WAVE end ========*/
+
+
+
+
+.text-center{
+    text-align: center;
+}
+.align-center{
+    margin: 0 auto;
+}
+
+.hr{
+    width: 100px;
+    height: 2px;
+    background: var(--gradient);
+    margin-bottom: 20px ;
+}
+
+
+
+.button-one {
+    background: var(--gradient);
+    border-radius: 5px;
+    color: var(--font-color);;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 50px;
+    position: relative;
+    text-decoration: none;
+    z-index: 2;
+    border: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+.button-one .icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: 0 auto;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 25px;
+}
+.button-one span{
+    white-space: nowrap;
+    z-index: 2;
+    position: relative;
+    color: var(--font-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: .5s ease;
+    background: transparent;
+    top: 0;
+}
+.button-one:before{
+    z-index: 1;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: var(--background);
+    transition: .5s ease;
+    border-radius: 3px;
+}
+
+
+.button-one:hover > .icon{
+    margin: auto;
+    top: 9px;
+    opacity: 1;
+}
+.button-one:hover > span {
+    top: -30px;
+    color: var(--background);
+    opacity: 0;
+
+}
+.button-one:hover:before {
+    background: transparent;
+}
+
+
+
+
+.button-one:hover span {
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+.gradient {
+    color: var(--fontcolortitle);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    font-size: 18px;
+    color: var(--font-color);
+    background: var(--background);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Roboto Flex';
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 2000px;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    [class*="__container"] {
+        padding: 0 20px;
+    }
+}
+
+
+p, li, a {
+    font-size: 15px;
+    padding-bottom: 5px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+ul.list {
+}
+ul.list li{
+    position: relative;
+    padding-left: 15px;
+}
+ul.list li:before{
+    content: '';
+    background: var(--gradient);
+    width: 10px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+a{
+    color: var(--font-color-link);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+p span {
+    font-weight: 600;
+    color: #444444;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 22px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+h2 span{
+    color: var(--font-color-link);
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+h4 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
+h5{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+input{
+    font-size: 20px;
+}

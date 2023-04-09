@@ -1,0 +1,32 @@
+.sliderba{
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 10px;
+}
+.sliderba__right{
+}
+.sliderba__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+.sliderba-image{
+    border-radius: 10px;
+
+}
+
+@media (max-width: 1223px) {
+    .sliderba{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 940px) {
+    .sliderba{
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -1,0 +1,143 @@
+.footer {
+    background: #15151d;
+    padding: 100px 0;
+}
+
+.footer__container {
+}
+
+.footer__submit{
+    max-width: 300px;
+    margin-left: auto;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    gap: 20px;
+}
+
+.footer__logo {
+}
+
+.footer__connection {
+}
+
+.footer__social {
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__social-list-item {
+    font-size: 40px;
+    color: var(--font-color-link);
+
+
+}
+
+
+.footer__form {
+}
+
+.footer__form-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__form-input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--background2);
+}
+
+
+/*///////////////////////*/
+
+
+.footer__form-group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+
+.footer__form-input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--font-color);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--background2);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.footer__form-input::placeholder {
+    color: transparent;
+}
+
+.footer__form-input:placeholder-shown ~ .footer__form-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.footer__form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+.footer__form-input:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #fe7531, #b508cd);
+    border-image-slice: 1;
+}
+
+.footer__form-input:focus ~ .footer__form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+    color: var(--fontcolortitle);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* reset input */
+.footer__form-input:required, .footer__form-input:invalid {
+    box-shadow: none;
+}
+
+
+@media (max-width: 900px) {
+    .footer__grid {
+       grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .footer__form-grid {
+        grid-template-columns: 1fr;
+
+    }
+}

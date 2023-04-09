@@ -1,0 +1,39 @@
+.subscribe{
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+.subscribe__email{
+    width: 100%;
+    border: 2px solid var(--background2);
+    background: transparent;
+    border-radius: 25px;
+    color: var(--background);
+    padding: 10px 120px 10px 10px;
+    box-sizing: border-box;
+
+}
+.subscribe__email:focus-visible{
+    background: transparent;
+}
+
+.subscribe__email::placeholder{
+    color: var(--background2);
+}
+.subscribe__button:before{
+    content: none;
+    width: auto;
+    display: none;
+}
+.subscribe__button{
+    color: black;
+    background: var(--background);
+    padding: 6px 10px;
+    width: 100px;
+    height: 39px;
+    border-radius: 25px;
+    position: absolute;
+    top: 24px;
+    right: 4px;
+    font-size: 30px;
+}

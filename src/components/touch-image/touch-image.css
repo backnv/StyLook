@@ -1,0 +1,59 @@
+.touch-image {
+}
+
+.touch-image__element {
+    /*border: 10px solid var(--background2);*/
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.touch-image__element:hover > .touch-image__element-image-a {
+    opacity: 0;
+}
+.touch-image__element:hover > .touch-image__overlay {
+    opacity: 0;
+}
+
+.touch-image__element:hover > .touch-image__clickme {
+    font-size: 10px;
+    opacity: .7;
+}
+
+.touch-image__element-image-b {
+    width: 100%;
+}
+
+.touch-image__element-image-a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .3s;
+}
+
+.touch-image__overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--select);
+    opacity: .3;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.touch-image__clickme {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--fontcolorsubtext);
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 1;
+    transition: .3s;
+}
+
